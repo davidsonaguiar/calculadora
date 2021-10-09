@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/calculadora/style.css">
+</head>
+<body>
+    <div id="cont-full">
+            <section id="cont-display">
+                <div class="display"></div>
+                <div class="preview"></div>
+            </section>
+            <section id="cont-buttons">
+                <button type="button" class="btn-func" id="clean" onclick="clean()">c</button>
+                <button type="button" class="btn-func" id="backspace" onclick="backspace()">&larr;</button>
+                <button type="button" class="btn-operator" onclick="insert('/')">&#247;</button>
+                <button type="button" class="btn-num" onclick="insert('7')">7</button>
+                <button type="button" class="btn-num" onclick="insert('8')">8</button>
+                <button type="button" class="btn-num" onclick="insert('9')">9</button>
+                <button type="button" class="btn-operator" onclick="insert('*')">x</button>
+                <button type="button" class="btn-num" onclick="insert('4')">4</button>
+                <button type="button" class="btn-num" onclick="insert('5')">5</button>
+                <button type="button" class="btn-num" onclick="insert('6')">6</button>
+                <button type="button" class="btn-operator" onclick="insert('-')">-</button>
+                <button type="button" class="btn-num" onclick="insert('1')">1</button>
+                <button type="button" class="btn-num" onclick="insert('2')">2</button>
+                <button type="button" class="btn-num" onclick="insert('3')">3</button>
+                <button type="button" class="btn-operator" onclick="insert('+')">+</button>
+
+                <button type="button" class="btn-num" onclick="insert('.')">,</button>
+                <button type="button" class="btn-num" onclick="insert('0')">0</button>
+                <button type="button" class="btn-func" id="res" onclick="res()">=</button>
+            </section>
+    </div>
+    <script type="text/javascript" src="/calculadora/script.js"></script>
+</body>
+</html>
